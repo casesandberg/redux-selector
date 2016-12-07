@@ -1,7 +1,7 @@
 {
   "name": "redux-selector",
   "version": "0.1.0",
-  "description": "",
+  "description": "Scope Selectors in Redux",
   "main": "index.js",
   "scripts": {
     "test": "npm run unit-test && npm run eslint",
@@ -30,5 +30,13 @@
     "eslint-plugin-import": "^1.16.0",
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-react": "^6.3.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/casesandberg/redux-selector.git"
+  },
+  "bugs": {
+    "url": "https://github.com/casesandberg/redux-selector/issues"
+  },
+  "homepage": "https://github.com/casesandberg/redux-selector#readme"
 }
