@@ -43,4 +43,20 @@ describe('scopeStateToSelectors', () => {
 
     expect(selectors.getFilterState(store)).toBe('active')
   })
+
+  test('second param for cross-selectors', () => {
+    const store = {
+      ui: {
+        filter: 'active',
+      },
+    }
+    const getFilterState = (state) => {
+      return state.ui.filter
+    }
+    const selectors = scopeStateToSelectors({}, {
+      getFilterState,
+    })
+
+    expect(selectors.getFilterState(store)).toBe('active')
+  })
 })
